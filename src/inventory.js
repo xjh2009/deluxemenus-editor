@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import AceEditor from 'react-ace';
 import YAML from 'js-yaml';
 import Modal from 'react-modal';
-import _LANG from './lang/english';
+import _LANG from './lang/chinese';
 import fileDownload from 'js-file-download';
 
 import Dropdown from 'react-dropdown';
@@ -18,7 +18,7 @@ import "ace-builds/src-noconflict/theme-github";
 const LANGLIST = ['russian', 'english', 'chinese'];
 
 let LANG = _LANG;
-const _lang = localStorage.getItem('lang') || 'english';
+const _lang = localStorage.getItem('lang') || 'chinese';
 
 let selectLang = async (lang) => {
   if (lang && LANGLIST.includes(lang)) {
